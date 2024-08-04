@@ -14,7 +14,7 @@ import SubmitButton from '../SubmitButton';
 import FileUploader from '../FileUploader';
 import { Form, FormControl } from '@/components/ui/form';
 import { PatientFormValidation } from '@/lib/validation';
-import { createUser } from '@/lib/actions/patient.actions';
+import { createUser, registerPatient } from '@/lib/actions/patient.actions';
 import { RadioGroup, RadioGroupItem } from '../ui/radio-group';
 import CustomFormField, { FormFieldType } from '../CustomFormField';
 import {
@@ -56,6 +56,19 @@ const RegisterForm = ({ user }: { user: User }) => {
     }
 
     try {
+      const patientData = {
+        ...values,
+        userId: user.$id,
+        birthDate: new Date(values.birthDate),
+        identificationDocument: formData,
+      };
+
+      // @ts-ignore
+      const patient = await registerPatient(patientData);
+
+      if (patient) {
+        router.push(`/patients/${user.$id}/new-appointment`);
+      }
     } catch (error) {
       console.log(error);
     }
