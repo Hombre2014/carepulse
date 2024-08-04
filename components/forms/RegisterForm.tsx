@@ -14,8 +14,8 @@ import SubmitButton from '../SubmitButton';
 import FileUploader from '../FileUploader';
 import { Form, FormControl } from '@/components/ui/form';
 import { PatientFormValidation } from '@/lib/validation';
-import { createUser, registerPatient } from '@/lib/actions/patient.actions';
 import { RadioGroup, RadioGroupItem } from '../ui/radio-group';
+import { registerPatient } from '@/lib/actions/patient.actions';
 import CustomFormField, { FormFieldType } from '../CustomFormField';
 import {
   Doctors,
