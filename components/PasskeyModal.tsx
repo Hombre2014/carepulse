@@ -1,9 +1,15 @@
 'use client';
 
 import Image from 'next/image';
-import { usePathname, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import { usePathname, useRouter } from 'next/navigation';
 
+import { decryptKey, encryptKey } from '@/lib/utils';
+import {
+  InputOTP,
+  InputOTPGroup,
+  InputOTPSlot,
+} from '@/components/ui/input-otp';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -13,12 +19,6 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from '@/components/ui/alert-dialog';
-import {
-  InputOTP,
-  InputOTPGroup,
-  InputOTPSlot,
-} from '@/components/ui/input-otp';
-import { decryptKey, encryptKey } from '@/lib/utils';
 
 const PasskeyModal = () => {
   const router = useRouter();
@@ -42,7 +42,7 @@ const PasskeyModal = () => {
       } else {
         setOpen(true);
       }
-  }, [encryptedKey]);
+  }, [encryptedKey, path, router]);
 
   const closeModal = () => {
     setOpen(false);
