@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CarePulse
 
-## Getting Started
+> A healthcare app for managing patients' appointments.
 
-First, run the development server:
+## Built With
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Major languages: TypeScript
+- Backend: Appwrite.io
+- Framework: Next.js
+- Tools used: Twilio, Sentry
+- Styling: TailwindCSS, shadcn/ui
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Screenshots
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![Home](/public/assets/images/Carepulse_home.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Live Link
 
-## Learn More
+You can view the current deployment by clicking the link bellow:
 
-To learn more about Next.js, take a look at the following resources:
+[Live Link](https://bankorama.vercel.app/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Deploy your project with [Vercel](https://vercel.com/)
 
-## Deploy on Vercel
+## Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+👤 **Yuriy Chamkoriyski**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- GitHub: [@Hombre2014](https://github.com/Hombre2014)
+- Twitter: [@Chamkoriyski](https://twitter.com/Chamkoriyski)
+- LinkedIn: [axebit](https://linkedin.com/in/axebit)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Hombre2014/carepulse/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+Thanks to JavaScript Mastery for inspirational [video](https://www.youtube.com/watch?v=lEflo_sc82g).
+
+## 📝 License
+
+This project is [MIT](./license.md) licensed.
